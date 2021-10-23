@@ -24,6 +24,7 @@ steps:
       tags:
         - hub.scireum.com/drone/test:latest
     environment:
+      PLUGIN_EXPERIMENTAL: true
       DOCKER_PASSWORD:
         from_secret: docker_password
       DOCKER_USERNAME:
