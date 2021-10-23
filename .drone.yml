@@ -17,6 +17,7 @@ steps:
   - name: publish_develop
     image: jgescireum/buildx:latest
     settings:
+      daemon.experimental: true
       registry: hub.scireum.com
       platforms:
         - linux/amd64
