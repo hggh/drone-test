@@ -21,7 +21,7 @@ steps:
       platforms:
         - linux/amd64
       tags:
-        - hub.scireum.com/drone/test:latest
+        - hub.scireum.com/sellsite/test:latest
     environment:
       PLUGIN_EXPERIMENTAL: true
       DOCKER_PASSWORD:
