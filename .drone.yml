@@ -20,6 +20,7 @@ steps:
       registry: hub.scireum.com
       platforms:
         - linux/amd64
+        - linux/arm64
       tags:
         - hub.scireum.com/sellsite/test:latest
     environment:
