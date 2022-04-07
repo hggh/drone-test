@@ -4,8 +4,7 @@ scireum_volumes: &scireum_volumes
     path: /var/run/docker.sock
   - name: m2
     path: /root/.m2
-  - name: docker_config
-    path: /root/.docker
+
 
 kind: pipeline
 name: default
