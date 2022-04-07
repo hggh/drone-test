@@ -24,7 +24,7 @@ steps:
       event:
         - push
 
-
+  
 volumes:
   - name: docker_socket
     host:
