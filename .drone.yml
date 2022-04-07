@@ -15,20 +15,9 @@ clone:
 
 steps:
   - name: publish_develop
-    image: jgescireum/buildx:latest
-    settings:
-      registry: hub.scireum.com
-      platforms:
-        - linux/amd64
-        - linux/arm64
-      tags:
-        - hub.scireum.com/sellsite/test:latest
-    environment:
-      PLUGIN_EXPERIMENTAL: true
-      DOCKER_PASSWORD:
-        from_secret: docker_password
-      DOCKER_USERNAME:
-        from_secret: docker_username
+    image: scireum/sirius-build-jdk17
+    commands:
+      - docker pull scireumskip/quasar:3.0.0
     volumes: *scireum_volumes
     when:
       branch:
